@@ -83,3 +83,5 @@ Returned when there is a server error
   "message": "Server error"
 }
 ```
+
+Feel free to contribute to this project by submitting issues or pull requests on GitHub.
