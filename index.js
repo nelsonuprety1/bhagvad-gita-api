@@ -31,6 +31,13 @@ quoteControllers()
     console.error(error);
   });
 
+// Home route
+app.get('/', (req, res) => {
+  res.send(`<h1>Welcome to Bhagavad Gita Quotes API</h1>
+            <p>This API provides quotes from the Bhagavad Gita.</p>
+            <p>Please refer to the <a href="https://github.com/nelsonuprety1/bhagvad-gita-api/blob/main/README.md" target="_blank">API documentation</a> for more information.</p>`);
+});
+
 //   Api route endpoints
 app.get('/api/quotes', async (req, res) => {
   try {
