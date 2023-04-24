@@ -1,0 +1,18 @@
+{
+  "name": "bhagvad-gita-api",
+  "version": "1.0.0",
+  "description": "Quotes from bhagvad gita",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "bhagvadgita"
+  ],
+  "author": "Nelson Uprety",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^7.0.4"
+  }
+}
