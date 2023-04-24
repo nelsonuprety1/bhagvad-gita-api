@@ -452,16 +452,6 @@ const quotes = [
   },
 ];
 
-// Insert all the quotes into the database
-// Quote.insertMany(quotes, (err, docs) => {
-//   if (err) {
-//     console.error(err);
-//   } else {
-//     console.log(`${docs.length} quotes were successfully inserted.`);
-//   }
-//   mongoose.connection.close();
-// });
-
 // Export a function that inserts all the quotes into the database
 module.exports = async function insertQuotes() {
   try {
