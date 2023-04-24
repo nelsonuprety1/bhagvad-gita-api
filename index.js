@@ -3,10 +3,13 @@ const mongoose = require('mongoose');
 const config = require('./config');
 const quoteControllers = require('./controllers/quoteControllers');
 const Quote = require('./models/quoteModel');
+const cors = require('cors');
 
 const app = express();
 
 const PORT = process.env.PORT || 8000;
+
+app.use(cors());
 
 async function connect() {
   try {
@@ -19,7 +22,7 @@ async function connect() {
 
 connect();
 
-// Call the insertQuotes function to insert the quotes into the database
+//  insert the quotes into the database
 quoteControllers()
   .then(() => {
     console.log('All quotes inserted.');
