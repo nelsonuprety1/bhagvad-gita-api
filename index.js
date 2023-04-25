@@ -9,11 +9,21 @@ const app = express();
 
 const PORT = process.env.PORT || 8000;
 
+// load environment variables from env
+/*
+The dotenv package is used to load the environment variables 
+from the .env file and it exposes the loaded environment variables
+ as an object in the process.env object.
+*/
+require('dotenv').config();
+
 app.use(cors());
+
+const mongoURI = process.env.MONGO_URI;
 
 async function connect() {
   try {
-    await mongoose.connect(config.mongoURI);
+    await mongoose.connect(mongoURI);
     console.log('Connected to mongo db');
   } catch (error) {
     console.error(error);
