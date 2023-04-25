@@ -4,10 +4,9 @@ An API that returns 100 quotes from the Bhagvad Gita. All the quotes have been t
 
 ## Base URL
 
-https://your-api-url.com
+https://bhagvad-gita-api-production.up.railway.app/
 
 ## Endpoints
-
 ### GET /api/quotes
 
 Get all quotes
