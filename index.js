@@ -1,6 +1,5 @@
 const express = require('express');
 const mongoose = require('mongoose');
-const config = require('./config');
 const quoteControllers = require('./controllers/quoteControllers');
 const Quote = require('./models/quoteModel');
 const cors = require('cors');
